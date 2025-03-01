@@ -1,66 +1,71 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    padding: 0px 0;
-    z-index: 1000;
-  }
-  
-  .navbar-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .navbar-list > li {
-    display: flex;
-  }
-  
-  .navbar-list .left {
-    margin-left: 20px;
-  }
-  
-  .navbar-list .center {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar-link {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; /* Esto alinea los íconos con el texto */
-    transition: background-color 0.3s;
-  }
-  
-  .navbar-link i {
-    margin-right: 0px; /* Espacio entre el ícono y el texto */
-  }
-  
-  .navbar-link:hover {
-    background-color: #333;
-  }
-  
-  body {
-    margin-top: 60px;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 0px 0;
+  z-index: 1000;
+}
 
-  .navbar-default {
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-list > li {
+  display: flex;
+}
+
+.navbar-list .left {
+  margin-left: 20px;
+}
+
+.navbar-list .center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Se adapta la clase para los botones */
+.navbar-link {
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Alinear íconos con texto */
+  transition: background-color 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.navbar-link span {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.navbar-link:hover {
+  background-color: #333;
+  border-radius: 0px;
+}
+
+body {
+  margin-top: 60px;
+}
+
+.navbar-default {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
 .navbar-scrolled {
-  background-color: #333;  /* Color de fondo cuando hace scroll */
+  background-color: #333;
   transition: background-color 0.3s ease;
 }
 
@@ -70,5 +75,5 @@
 }
 
 .navbar-scrolled .logo {
-  width: 100px;  /* Reducir el tamaño del logo cuando hace scroll */
+  width: 100px;
 }
