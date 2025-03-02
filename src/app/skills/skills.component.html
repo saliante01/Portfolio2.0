@@ -1,16 +1,56 @@
 <app-navbar></app-navbar>
-
-<!-- Contenedor de la pantalla completa -->
 <div class="full-screen">
   <div class="content">
     <h1>SKILLS</h1>
-    <p class="lorem-text">I am Sebastián Aliante, a student of Civil Computer Engineering at the University of La Frontera in Temuco, Chile. Software development is an area that deeply excites me and has driven me to explore various tools and approaches. I currently work on the development of web applications and also on creating simulators and 3D games. I have a strong interest in the application of software engineering in education, as I believe technology plays a key role in transforming how people learn and connect with knowledge.</p>
-    
-    <!-- Contenedor para los íconos de redes sociales -->
-    <div class="social-icons">
-      <a href="https://github.com/tuusuario" target="_blank" class="icon"><i class="fab fa-github"></i></a>
-      <a href="https://gitlab.com/tuusuario" target="_blank" class="icon"><i class="fab fa-gitlab"></i></a>
-      <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <div class="skills-container">
+    <!-- Primera fila con dos rectángulos -->
+    <div class="row">
+      <div class="skill-box-container">
+        <div class="skill-box first-image">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[0]" alt="Skill Image" class="skill-image first-img">
+        </div>
+      </div>
+      <div class="skill-box-container">
+        <div class="skill-box">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[1]" alt="Skill Image" class="skill-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda fila con dos rectángulos -->
+    <div class="row">
+      <div class="skill-box-container">
+        <div class="skill-box">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[2]" alt="Skill Image" class="skill-image">
+        </div>
+      </div>
+      <div class="skill-box-container">
+        <div class="skill-box">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[3]" alt="Skill Image" class="skill-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera fila con dos rectángulos -->
+    <div class="row">
+      <div class="skill-box-container">
+        <div class="skill-box">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[4]" alt="Skill Image" class="skill-image">
+        </div>
+      </div>
+      <div class="skill-box-container">
+        <div class="skill-box">
+          <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
+          <img [src]="'assets/' + images[5]" alt="Skill Image" class="skill-image">
+        </div>
+      </div>
     </div>
   </div>
 </div>
