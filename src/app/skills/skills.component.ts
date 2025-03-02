@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-  images = ['java3.png.webp','SpringLogo.png', 'klipartz.com-2.png', 'UnityLogo.png','UnityLogo.png','UnityLogo.png'];
+  images = ['java3.png.webp','SpringLogo.png', 'klipartz.com-2.png', 'workbench1.png','UnityLogo.png','Csharp_Logo.png'];
 
 }

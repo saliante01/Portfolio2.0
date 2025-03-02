@@ -1,1 +1,35 @@
-<p>projects works!</p>
+<app-navbar></app-navbar>
+
+<div class="full-screen">
+  <div class="content-container">
+    <div class="cards-container">
+      <div class="card" *ngFor="let project of projects">
+        <h3>{{ project.title }}</h3>
+        <hr />
+        <img [src]="project.image" alt="Project Image" />
+        <hr />
+        <p class="section-title"><strong></strong> {{ project.softwareType }}</p>
+        <hr />
+        <p><strong></strong> {{ project.duration }}</p>
+        <hr />
+        <p><strong></strong> {{ project.description }}</p>
+        <hr />
+        <p><strong></strong> {{ project.context }}</p>
+        <hr />
+
+        <!-- Iconos de enlace (GitHub, GitLab, Sitio Web) -->
+        <div class="project-links">
+          <a *ngIf="project.github" [href]="project.github" target="_blank">
+            <i class="fab fa-github icon"></i>
+          </a>
+          <a *ngIf="project.gitlab" [href]="project.gitlab" target="_blank">
+            <i class="fab fa-gitlab icon"></i>
+          </a>
+          <a *ngIf="project.website" [href]="project.website" target="_blank">
+            <i class="fas fa-link icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
