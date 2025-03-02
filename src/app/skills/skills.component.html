@@ -5,50 +5,69 @@
   </div>
 
   <div class="skills-container">
-    <!-- Primera fila con dos rectángulos -->
+    <!-- Primera fila con título y línea -->
+    <div class="section-header">
+      <span class="section-title">Programming Languages</span>
+    </div>
     <div class="row">
       <div class="skill-box-container">
         <div class="skill-box first-image">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[0]" alt="Skill Image" class="skill-image first-img">
+          <div class="skill-text">Java</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
       <div class="skill-box-container">
         <div class="skill-box">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[1]" alt="Skill Image" class="skill-image">
+          <div class="skill-text">Spring</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
     </div>
 
-    <!-- Segunda fila con dos rectángulos -->
+    <!-- Segunda fila con título y línea -->
+    <div class="section-header">
+      <hr class="separator">
+      <div class="section-title" id="database-title">Database</div> <!-- Segundo separador con id único -->
+    </div>
+
     <div class="row">
       <div class="skill-box-container">
         <div class="skill-box">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[2]" alt="Skill Image" class="skill-image">
+          <div class="skill-text">MySql</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
       <div class="skill-box-container">
         <div class="skill-box">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[3]" alt="Skill Image" class="skill-image">
+          <div class="skill-text">Workbench</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
     </div>
 
-    <!-- Tercera fila con dos rectángulos -->
+    <!-- Tercera fila con título y línea -->
+    <div class="section-header">
+  <hr class="separator">
+  <div class="section-title" id="game-developer-title">Game Developer</div> <!-- Segundo separador con id único -->
+  </div>
+
     <div class="row">
       <div class="skill-box-container">
         <div class="skill-box">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[4]" alt="Skill Image" class="skill-image">
+          <div class="skill-text">Unity</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
       <div class="skill-box-container">
         <div class="skill-box">
           <div class="image-overlay"></div> <!-- Overlay para el fade oscuro -->
           <img [src]="'assets/' + images[5]" alt="Skill Image" class="skill-image">
+          <div class="skill-text">C# with Unity</div> <!-- Texto dentro del rectángulo -->
         </div>
       </div>
     </div>
