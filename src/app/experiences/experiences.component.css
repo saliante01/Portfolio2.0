@@ -1,0 +1,119 @@
+/* Estilo para la pantalla completa */
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Permite hacer scroll vertical */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al inicio para permitir el scroll */
+    text-align: center;
+  }
+
+/* Contenedor de las experiencias */
+.experiences-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Título de la sección */
+.experiences-title {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+/* Contenedor de las cartas */
+.experiences {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Aumenta el espacio entre las filas */
+    margin-top: 10%;
+}
+
+/* Estilo de las cartas */
+.experience-card {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    padding: 20px;
+    width: 550px;
+    height: 350px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Necesario para posicionar el círculo */
+}
+
+/* Estilo para la carta que está a la izquierda */
+.left {
+    align-self: flex-start; /* Alinea la carta a la izquierda */
+    margin-left: 70%; /* Mueve la carta más hacia la izquierda */
+}
+
+/* Estilo para la carta que está a la derecha */
+.right {
+    align-self: flex-end; /* Alinea la carta a la derecha */
+    margin-right: 70%; /* Mueve la carta más hacia la derecha */
+}
+
+/* Círculo amarillo en la carta de la izquierda */
+.left::before {
+    content: "";
+    position: absolute;
+    left: -25px; /* Coloca el círculo a la izquierda de la carta */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Tamaño del círculo */
+    height: 20px; /* Tamaño del círculo */
+    background-color: #f39c12; /* Color amarillo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+}
+
+/* Círculo amarillo en la carta de la derecha */
+.right::before {
+    content: "";
+    position: absolute;
+    right: -25px; /* Coloca el círculo a la derecha de la carta */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Tamaño del círculo */
+    height: 20px; /* Tamaño del círculo */
+    background-color: #f39c12; /* Color amarillo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+}
+
+/* Estilos de texto dentro de las cartas */
+.experience-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 40px;
+    border-bottom: 1px solid rgb(82, 82, 82); /* Línea blanca debajo del título */
+    padding-bottom: 10px; /* Espacio entre el título y la línea */
+}
+
+.experience-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(82, 82, 82); /* Línea blanca debajo de cada párrafo */
+    padding-bottom: 10px; /* Espacio entre el párrafo y la línea */
+}
+
+/* Eliminar la línea blanca después del último párrafo */
+.experience-card p:last-child {
+    border-bottom: none;
+}

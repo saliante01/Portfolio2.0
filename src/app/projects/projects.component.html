@@ -1,13 +1,15 @@
 <app-navbar></app-navbar>
 
 <div class="full-screen">
+  
   <div class="content-container">
+    <!-- Título centrado -->
+    <h1 class="projects-title">Projects</h1>
+
     <div class="cards-container">
       <div class="card" *ngFor="let project of projects">
         <h3>{{ project.title }}</h3>
-        <hr />
         <img [src]="project.image" alt="Project Image" />
-        <hr />
         <p class="section-title"><strong></strong> {{ project.softwareType }}</p>
         <hr />
         <p><strong></strong> {{ project.duration }}</p>
@@ -15,7 +17,6 @@
         <p><strong></strong> {{ project.description }}</p>
         <hr />
         <p><strong></strong> {{ project.context }}</p>
-        <hr />
 
         <!-- Iconos de enlace (GitHub, GitLab, Sitio Web) -->
         <div class="project-links">

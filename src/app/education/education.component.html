@@ -1,1 +1,22 @@
-<p>education works!</p>
+<app-navbar></app-navbar>
+
+<div class="full-screen">
+    <div class="timeline-container">
+      <h1 class="timeline-title">Education</h1>
+  
+      <div class="timeline">
+        <!-- Línea vertical -->
+        <div class="vertical-line"></div>
+  
+        <!-- Hitos -->
+        <div *ngFor="let milestone of milestones; let i = index" class="timeline-item" [ngClass]="{'right': i % 2 !== 0, 'left': i % 2 === 0}">
+          <div class="milestone-content">
+            <h2>{{ milestone.title }}</h2>
+            <p>{{ milestone.date }}</p>
+            <p *ngIf="milestone.university">{{ milestone.university }}</p>
+          </div>
+          <div class="timeline-marker"></div>
+        </div>
+      </div>
+    </div>
+  </div>

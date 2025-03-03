@@ -1,0 +1,84 @@
+/* Estilo para la pantalla completa */
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Permite hacer scroll vertical */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al inicio para permitir el scroll */
+    text-align: center;
+  }
+
+/* Contenedor de la sección de contacto */
+.contact-container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+}
+
+/* Título */
+.contact-title {
+    font-size: 70px;
+    margin-bottom: 100px;
+}
+
+/* Contenedor de la foto */
+.photo-container {
+    margin-bottom: 100px;
+}
+
+/* Estilo de la foto circular */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los íconos */
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 40px; /* Tamaño de los íconos */
+    color: white; /* Color de los íconos */
+    transition: color 0.3s, transform 0.3s; /* Animación para el color y el tamaño */
+}
+
+.icon:hover {
+    color: #f39c12; /* Color amarillo al pasar el mouse */
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Estilo para el enlace de descargar CV */
+.download-cv {
+    margin-top: 30px;
+}
+
+.download-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #f39c12; /* Amarillo */
+    color: black;
+}
