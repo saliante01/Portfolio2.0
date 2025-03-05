@@ -10,38 +10,36 @@ import { CommonModule } from '@angular/common';
 })
 export class ExperiencesComponent {
   experiences = [
-
     {
-      title: 'Game Developer',
-      date: 'Junio - 2025',
+      title: 'Software Development Intern',
+      date: 'June - 2025',
       place: 'Abstract Digital',
-      description: 'Programar videojuegos para clientes'
+      description: 'Programming video games for clients'
     },
     {
-      title: 'Desarrollador web',
-      date: 'Diciembre - 2024',
+      title: 'Web Developer',
+      date: 'December - 2024',
       place: 'Extreme Adventure Academy',
-      description: 'Programación de pagina web para la gestión y promoción empresarial, uso de JWT, Tokens'
-    },
-
-    {
-      title: 'Game Developer',
-      date: 'Octubre - 2024',
-      place: 'Gamejam',
-      description: 'Programar fpisicas de movimiento y control de personaje, desarrollar interacciones con objetos y personajes para una experiencia inmersiva, crear puzzle numerico interactivo',
+      description: 'Website programming for business management and promotion, using JWT and Tokens'
     },
     {
       title: 'Game Developer',
-      date: 'Junio - 2023',
+      date: 'October - 2024',
+      place: 'Gamejam - Personal Project',
+      description: 'Programming movement physics and character control, developing interactions with objects and characters for an immersive experience, creating an interactive numerical puzzle'
+    },
+    {
+      title: 'Game Developer',
+      date: 'June - 2023',
       place: 'Universidad de la Frontera',
-      description: 'Programar mecánicas del juego, desarrollo de interacciones del personaje principal con puzzles'
+      description: 'Programming game mechanics, developing interactions between the main character and puzzles'
     },
     {
-      title: 'Practicante de Desarrollo de software',
-      date: 'Enero 2023',
+      title: 'Software Development Intern',
+      date: 'January 2023',
       place: 'Ff Studios',
-      description: 'Desarrollo de herramienta interactiva para aprendizaje sobre el funcionamiento de un Parque Eolico , considerando parametros comunes de operación, ocasiones de falla y conceptos relevantes'
+      description: 'Development of an interactive tool for learning about the operation of a Wind Farm, considering common operational parameters, failure scenarios, and relevant concepts'
     },
-    // Agrega más experiencias si es necesario
+    // Add more experiences if needed
   ];
 }

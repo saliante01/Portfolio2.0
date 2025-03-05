@@ -14,7 +14,9 @@ export class HomeComponent implements OnInit {
     'assets/UnityLogo.png', // Cambia con tus propias imágenes
     'assets/java3.png.webp',
     'assets/SpringLogo.png',
-    'assets/klipartz.com-2.png'
+    'assets/klipartz.com-2.png',
+    'assets/gitlabLogo.png',
+    'assets/github.png'
   ];
 
   // Índice de la imagen actual que se muestra
